@@ -1,0 +1,16 @@
+package: jshint
+user: tswicegood
+
+platform:
+  - linux-64
+  - osx-64
+
+install:
+  - sudo yum erase -q gcc gcc-c++
+  - sudo yum install -q gcc gcc-c++
+  - conda config -f --add channels https://conda.binstar.org/wakari/channel/master
+
+script:
+  - conda build .
+
+build_targets: conda

@@ -1,0 +1,16 @@
+package:
+  name: jshint
+  version: 2.5.2
+
+requirements:
+  build:
+    - nodejs
+  run:
+    - nodejs
+
+test:
+  commands:
+    - jshint --version
+
+about:
+  home: http://jshint.com/
